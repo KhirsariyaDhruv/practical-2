@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class Timetable</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f2ff;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
+    .timetable {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      width: 95%;
+      max-width: 900px;
+      margin: auto;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #0077c0;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    @media (max-width: 600px) {
+      th, td {
+        padding: 8px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Weekly Class Timetable</h2>
+
+  <div class="timetable">
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>9:00 - 10:00</th>
+        <th>10:00 - 11:00</th>
+        <th>11:00 - 12:00</th>
+        <th>12:00 - 1:00</th>
+        <th>2:00 - 3:00</th>
+        <th>3:00 - 4:00</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>DSA</td>
+        <td>CN</td>
+        <td>WDF</td>
+        <td>--</td>
+        <td>OOP Lab</td>
+        <td>OOP Lab</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>DM</td>
+        <td>WDF</td>
+        <td>CN</td>
+        <td>--</td>
+        <td>Library</td>
+        <td>Sports</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>WDF</td>
+        <td>OOP</td>
+        <td>DSA</td>
+        <td>--</td>
+        <td>CPI</td>
+        <td>CPI</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>CN</td>
+        <td>DM</td>
+        <td>WDF Lab</td>
+        <td>--</td>
+        <td>WDF Lab</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>DSA</td>
+        <td>DM</td>
+        <td>CN</td>
+        <td>--</td>
+        <td>OOP</td>
+        <td>WDF</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>

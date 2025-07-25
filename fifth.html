@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Result - Semester 3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f2ff;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
+    .styled-table {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      background-color: #0077c0;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+    }
+
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .gpa-box {
+      margin-top: 25px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #0077c0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Semester 3 - Result Summary</h2>
+
+  <div class="styled-table">
+    <table>
+      <tr>
+        <th>Course Code</th>
+        <th>Course Name</th>
+        <th>Grade</th>
+        <th>Credits</th>
+      </tr>
+      <tr><td>CEUE203</td><td>Object Oriented Programming</td><td>A</td><td>5</td></tr>
+      <tr><td>CSUC201</td><td>Data Structures & Algorithms</td><td>B+</td><td>5</td></tr>
+      <tr><td>HSUV201</td><td>Creativity & Innovation</td><td>A+</td><td>2</td></tr>
+      <tr><td>ITUC201</td><td>Computer Networks</td><td>A</td><td>4</td></tr>
+      <tr><td>ITUE203</td><td>Web Development</td><td>B</td><td>4</td></tr>
+      <tr><td>MSUD203</td><td>Discrete Mathematics</td><td>A</td><td>4</td></tr>
+    </table>
+  </div>
+
+  <div class="gpa-box">
+    SGPA: <strong>8.42</strong> / 10
+  </div>
+
+</body>
+</html>

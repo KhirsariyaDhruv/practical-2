@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Registration</title>
+  <style>
+    body {
+      background-color: #e6f2ff;
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .checkbox-group {
+      margin-top: 10px;
+    }
+
+    .checkbox-group label {
+      display: block;
+      font-weight: normal;
+      margin: 8px 0;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      margin-top: 25px;
+      padding: 12px;
+      background-color: #0077c0;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #005b96;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Course Registration Form</h2>
+
+  <div class="form-container">
+    <!-- ✅ Updated action to 1.html -->
+    <form action="1.html" method="POST">
+      <label for="student-name">Student Name:</label>
+      <input type="text" id="student-name" name="student-name" required>
+
+      <label for="student-id">Student ID:</label>
+      <input type="text" id="student-id" name="student-id" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="sd">Select Department</label>
+      <select id="sd" name="sd" required>
+        <option value="">--Select--</option>
+        <option value="CSPIT-CSE">CSPIT-CSE</option>
+        <option value="CSPIT-CE">CSPIT-CE</option>
+        <option value="CSPIT-IT">CSPIT-IT</option>
+        <option value="CSPIT-EC">CSPIT-EC</option>
+        <option value="CSPIT-AIML">CSPIT-AIML</option>
+        <option value="CSPIT-ME">CSPIT-ME</option>
+        <option value="CSPIT-CL">CSPIT-CL</option>
+        <option value="CSPIT-EE">CSPIT-EE</option>
+      </select>
+
+      <label>Select Courses:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="courses" value="OOP"> Object Oriented Programming</label>
+        <label><input type="checkbox" name="courses" value="DSA"> Data Structures & Algorithms</label>
+        <label><input type="checkbox" name="courses" value="WDF"> Web Development Frameworks</label>
+        <label><input type="checkbox" name="courses" value="CN"> Computer Networks</label>
+        <label><input type="checkbox" name="courses" value="DM"> Discrete Mathematics</label>
+      </div>
+
+      <!-- ✅ Register Button (submits to 1.html) -->
+      <input type="submit" value="Register">
+    </form>
+  </div>
+
+</body>
+</html>
